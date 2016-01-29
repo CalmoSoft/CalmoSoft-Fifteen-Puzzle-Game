@@ -1,11 +1,9 @@
 load "guilib.ring"
-load "gamelib.ring"
-load "ring_qt.ring"
 
 App1 = new qApp {
 
         empty = 16        
-        rnd = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        rnd = []
         
         win1 = new qWidget() {
                    move(0,0)
