@@ -2,8 +2,8 @@ load "guilib.ring"
 
 App1 = new qApp {
 
-        empty = 16        
         rnd = []
+        empty = 16        
         
         win1 = new qWidget() {
                    move(0,0)
