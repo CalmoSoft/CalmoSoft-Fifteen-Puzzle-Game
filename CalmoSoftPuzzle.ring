@@ -4,8 +4,8 @@ load "ring_qt.ring"
 
 App1 = new qApp {
 
+        rnd = []
         empty = 16        
-        rnd = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         
         win1 = new qWidget() {
                    move(0,0)
@@ -154,7 +154,7 @@ func moveTile nr2
        left = ((empty = (nr2- 1)) and ((nr2 % 4) != 1))
        right = ((empty = (nr2 + 1)) and ((nr2 % 4) != 0))
        move = up or down or left  or right
-       if move = 1 and (nr2 != 0)            
+       if move = 1            
           button[nr2] { temp2 = text() }
           button[empty]  {settext(temp2)}
           button[nr2]  {settext("")}
